@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/weather-it-will-rain-react/static/css/main.54dafce4.css",
-    "main.js": "/weather-it-will-rain-react/static/js/main.76c1b47f.js",
+    "main.js": "/weather-it-will-rain-react/static/js/main.08cf7b24.js",
     "index.html": "/weather-it-will-rain-react/index.html",
     "main.54dafce4.css.map": "/weather-it-will-rain-react/static/css/main.54dafce4.css.map",
-    "main.76c1b47f.js.map": "/weather-it-will-rain-react/static/js/main.76c1b47f.js.map"
+    "main.08cf7b24.js.map": "/weather-it-will-rain-react/static/js/main.08cf7b24.js.map"
   },
   "entrypoints": [
     "static/css/main.54dafce4.css",
-    "static/js/main.76c1b47f.js"
+    "static/js/main.08cf7b24.js"
   ]
 }

@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     console.log("updating stuff");
-    const coordUrl = `http://www.mapquestapi.com/geocoding/v1/address?key=${mapQuestKey}&location=${place}`;
+    const coordUrl = `https://www.mapquestapi.com/geocoding/v1/address?key=${mapQuestKey}&location=${place}`;
     axios({
       url: coordUrl,
       method: "GET",

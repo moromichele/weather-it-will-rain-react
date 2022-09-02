@@ -1,122 +1,134 @@
 .App {
-  text-align: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e5e7eb;
-  transition: background-color 1s;
+	text-align: center;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e5e7eb;
+	transition: background-color 1s;
+	padding: 1rem;
 }
 
 .app-content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 500px;
-  max-height: 950px;
-  border-radius: 15px;
-  background-color: #f9fafb;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 500px;
+	max-height: 950px;
+	border-radius: 15px;
+	background-color: #f9fafb;
 }
 
 .pred-container {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .prediction-box {
-  flex-grow: 1;
-  padding: 2rem;
+	flex-grow: 1;
+	padding: 2rem;
 }
 
 .prediction {
-  font-size: 140px;
-  letter-spacing: -8px;
+	font-size: 140px;
+	letter-spacing: -8px;
 }
 
 .spacer {
-  background-color: #334155;
-  height: 2px;
-  width: 90%;
-  margin: 10px auto;
+	background-color: #334155;
+	height: 2px;
+	width: 90%;
+	margin: 10px auto;
 }
 
 .location,
 input {
-  padding: 10px 10px;
-  border: 0px;
-  font-size: 30px;
-  animation-name: fade-in;
-  animation-duration: 0.5s;
+	padding: 10px 10px;
+	border: 0px;
+	font-size: 30px;
+	animation-name: fade-in;
+	animation-duration: 0.5s;
 }
 
 .location {
-  word-break: break-word;
+	word-break: break-word;
 }
 
 input {
-  background: linear-gradient(#000, #eee) center bottom 5px / 95% 1px no-repeat;
-  background-color: white;
-  border-radius: 5px;
-  font-family: inherit;
-  text-align: center;
-  max-width: 85%;
+	background: linear-gradient(#000, #eee) center bottom 5px / 95% 1px no-repeat;
+	background-color: white;
+	border-radius: 5px;
+	font-family: inherit;
+	text-align: center;
+	max-width: 85%;
 }
 
 input:focus {
-  outline: 1px solid gray;
+	outline: 1px solid gray;
 }
 
 .date {
-  font-size: larger;
+	font-size: larger;
 }
 
 @keyframes fade-in {
-  0% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-  }
+	0% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 @media (orientation: landscape) {
-  .prediction {
-    letter-spacing: 0px;
-  }
+	.prediction {
+		letter-spacing: 0px;
+	}
 }
 
 @media (orientation: landscape) and (height < 500px) {
-  .pred-container {
-    flex-direction: row;
-  }
-  .app-content {
-    width: none;
-    max-width: 1000px;
-    max-height: none;
-    align-items: center;
-  }
+	.pred-container {
+		flex-direction: row;
+	}
+	.app-content {
+		width: none;
+		max-width: 1000px;
+		max-height: none;
+		align-items: center;
+	}
 }
 
 @media (max-width: 650px) {
-  .App {
-    background-color: #f9fafb;
-  }
+	.App {
+		background-color: #f9fafb;
+	}
+
+	.prediction {
+		font-size: 120px;
+		letter-spacing: -8px;
+	}
+}
+
+@media (max-width: 300px) {
+	.prediction {
+		font-size: 90px;
+	}
 }
 
 button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  border-radius: 5px;
-  min-width: 70%;
-  max-width: 90%;
-  margin: 0 auto;
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	border-radius: 5px;
+	min-width: 70%;
+	max-width: 90%;
+	margin: 0 auto;
 }
 
 button:focus-visible {
-  outline: 1px solid black;
+	outline: 1px solid black;
 }

@@ -6,7 +6,7 @@ const rainToString = (rainData) => {
   // TODO: better logic.....
   if (rainData === 0) return "No";
   if (rainData >= 3) return "Yes";
-  if (rainData === 2) return "Probably";
+  if (rainData === 2) return "Yeah";
   return "Maybe";
 };
 
